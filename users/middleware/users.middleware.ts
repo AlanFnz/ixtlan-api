@@ -86,7 +86,7 @@ class UsersMiddleware {
     res: express.Response,
     next: express.NextFunction
   ) {
-    if (!ObjectId.isValid(req.body.userId)) {
+    if (!ObjectId.isValid(req.params.userId)) {
       return res.status(HttpStatusCode.BAD_REQUEST).send({
         errors: [ResponseMessages.INVALID_ID],
       });
@@ -119,7 +119,7 @@ class UsersMiddleware {
     res: express.Response,
     next: express.NextFunction
   ) {
-    if (!ObjectId.isValid(req.body.userId)) {
+    if (!ObjectId.isValid(req.params.userId)) {
       return res.status(HttpStatusCode.BAD_REQUEST).send({
         errors: [ResponseMessages.INVALID_ID],
       });
