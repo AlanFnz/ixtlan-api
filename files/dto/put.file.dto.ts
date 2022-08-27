@@ -12,7 +12,7 @@ export interface PutFileDto {
   printable: boolean;
   nft: boolean;
   freebie: boolean;
-  lastStatusUpdate: Date;
+  lastStatusUpdate: number;
   //////////////////////////
 
   // stats /////////////////
@@ -30,6 +30,6 @@ export interface PutFileDto {
   //////////////////////////
 
   // dates ////////////
-  uploadDate: Date;
+  uploadDate: number;
   //////////////////////////
 }

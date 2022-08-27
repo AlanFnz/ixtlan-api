@@ -129,7 +129,7 @@ class UsersMiddleware {
 
     if (user) {
       try {
-        user.lastLogin = Date.now();
+        user.lastLogin = new Date().getDate();
         user.save();
         next();
       } catch (e) {

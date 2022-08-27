@@ -12,13 +12,13 @@ export interface CreateUserDto {
 
   // user status ///////////
   enabled: boolean;
-  lastStatusUpdate?: Date;
+  lastStatusUpdate?: number;
   //////////////////////////
 
   // personal information //
   firstName?: string;
   lastName?: string;
-  birthDate: Date;
+  birthDate: number;
   location?: string;
   country: string;
   //////////////////////////
@@ -42,8 +42,8 @@ export interface CreateUserDto {
   //////////////////////////
 
   // auth dates ////////////
-  signupDate?: Date;
-  lastLogin?: Date;
+  signupDate?: number;
+  lastLogin?: number;
   //////////////////////////
 
   // others ////////////////

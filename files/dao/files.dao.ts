@@ -24,10 +24,7 @@ class FilesDao {
     printable: { type: Boolean, required: true, default: false },
     nft: { type: Boolean, required: true, default: false },
     freebie: { type: Boolean, required: true, default: false },
-    lastStatusUpdate: {
-      type: Date,
-      default: Date.now,
-    },
+    lastStatusUpdate: Number,
     //////////////////////////
 
     // stats /////////////////
@@ -65,7 +62,7 @@ class FilesDao {
     //////////////////////////
 
     // dates ////////////
-    uploadDate: { type: Date, required: true },
+    uploadDate: Number,
     //////////////////////////
   });
 
