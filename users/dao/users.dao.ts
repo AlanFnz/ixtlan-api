@@ -26,16 +26,13 @@ class UsersDao {
 
     // user status ///////////
     enabled: { type: Boolean, required: true, default: true },
-    lastStatusUpdate: {
-      type: Date,
-      default: Date.now,
-    },
+    lastStatusUpdate: Number,
     //////////////////////////
 
     // personal information //
     firstName: String,
     lastName: String,
-    birthDate: { type: Date, required: true },
+    birthDate: Number,
     location: String,
     country: {
       type: String,
@@ -73,14 +70,8 @@ class UsersDao {
     //////////////////////////
 
     // auth dates ////////////
-    signupDate: {
-      type: Date,
-      default: Date.now,
-    },
-    lastLogin: {
-      type: Date,
-      default: Date.now,
-    },
+    signupDate: Number,
+    lastLogin: Number,
     //////////////////////////
 
     // others ////////////////

@@ -10,6 +10,9 @@ const AUTH_REFRESH_TOKEN = "/refresh-token";
 //////// USERS /////////
 const USERS_BASE = "/users";
 const PARAM_USER_ID = "/:userId";
+//////// FILES /////////
+const FILES_BASE = "/files";
+const PARAM_FILE_ID = "/:fileId";
 /// PERMISSION FLAGS ///
 const PERMISSION_FLAGS = "/permissionFlags";
 const PARAM_PERMISSION_FLAGS = "/:permissionFlags";
@@ -43,4 +46,11 @@ export const USERS = {
   USER_ID: USERS_BASE + PARAM_USER_ID,
   USER_PERMISSION_FLAGS:
     USERS_BASE + PARAM_USER_ID + PERMISSION_FLAGS + PARAM_PERMISSION_FLAGS,
+};
+
+export const FILES = {
+  USERS: FILES_BASE,
+  USER_ID: FILES_BASE + PARAM_FILE_ID,
+  USER_PERMISSION_FLAGS:
+    FILES_BASE + PARAM_FILE_ID + PERMISSION_FLAGS + PARAM_PERMISSION_FLAGS,
 };

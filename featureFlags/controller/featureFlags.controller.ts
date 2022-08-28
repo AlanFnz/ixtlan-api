@@ -25,7 +25,7 @@ class FeatureFlagsController {
   }
 
   async getFeatureById(req: express.Request, res: express.Response) {
-    let feature: any [];
+    let feature: any;
     try {
       feature = await featureFlagsService.readById(req.body._id);
     } catch (e) {
@@ -35,7 +35,7 @@ class FeatureFlagsController {
   }
 
   async createFeature(req: express.Request, res: express.Response) {
-    let feature: any [];
+    let feature: any;
     try {
       feature = await featureFlagsService.create(req.body);
     } catch (e) {
