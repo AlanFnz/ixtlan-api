@@ -1,1 +1,1 @@
-# BeatFeed API
+# Ixtlan API
